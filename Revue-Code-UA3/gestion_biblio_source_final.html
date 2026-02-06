@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Gestion Biblio</title>
+</head>
+
+<body onload="LancerApplication()">
+
+    <div class="wrapper">
+        <h1>📚 BIBLIO MANAGER PRO</h1>
+    <br>
+
+    <div style="background: #222; padding: 15px;">
+        <label for="inp_A" class="input">Titre</label>
+        <input type="text" id="inp_A" placeholder="Titre...">
+    
+        <label for="inp_B" class="input"></label>
+        <input type="text" id="inp_B" placeholder="Auteur...">
+    
+        <form>
+            <select id="sel_X">
+                <option value="1">Science-Fiction</option>
+                <option value="2">Documentaire</option>
+                <option value="3">Roman</option>
+            </select>
+        </form>
+        
+        <label for="inp_C" class="input"></label>
+        <input type="text" id="inp_C" placeholder="ISBN">
+        
+        <button class="btn-add" onclick="Executer_la_sauvegarde_a_la_memoire()">ENREGISTRER</button>
+        <br>
+        
+        Recherche : <input type="text" onkeyup="regarder(this.value)" style="background: #ffffcc; color: black;">
+    </div>
+    <p id="zone_m"></p>
+    <br>
+    
+    <h3>Inventaire (<span id="cpt">0</span>)</h3>
+    
+    <table id="tab">
+    <thead>
+        <tr>
+            <th>Num</th>
+            <th>Info Livre</th>
+            <th>Type</th>
+            <th>Détails</th>
+            <th>Opt</th>
+        </tr>
+    </thead>
+    
+    <tbody id="corps_du_tableau">
+    </tbody>
+    
+    </table>
+    
+    <br>
+        <button onclick="kill()">⚠️ RAZ</button>
+    </div>
+
+    <script src="/java/structuration.js"></script>
+    <script src="/java/kill.js"></script>
+    <script src="/java/alert.js"></script>
+    <script src="/java/regarde.js"></script>
+</body>
+</html>
