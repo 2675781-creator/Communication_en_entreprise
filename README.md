@@ -25,7 +25,7 @@ Cette approche permet d’assurer une bonne traçabilité du travail et une coll
   
 Communication_en_entreprise/  
 ├── README.md  
-├── projet UA1/ 
+├── projet UA1/  
 └── Consignes du projet (PDF)  
 └── branches/  
 ├── daniel  
