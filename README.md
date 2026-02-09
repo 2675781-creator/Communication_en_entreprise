@@ -36,9 +36,9 @@ Communication_en_entreprise/
 La structure est pensée pour être compréhensible par une personne extérieure au projet.
 
 ## Répartition du travail
-- Daniel : À écrire
-- Thiery : À écrire
-- Yacine : À écrire  
+- Daniel : correction et amélioration du fichier gestion_biblio_source_final.html
+- Thiery : fichier .css
+- Yacine : fichier .js 
 (La répartition peut évoluer selon l’avancement du projet.)
 
 ## Échéance
