@@ -21,17 +21,17 @@ L’équipe adopte une méthodologie inspirée des pratiques professionnelles :
 
 Cette approche permet d’assurer une bonne traçabilité du travail et une collaboration efficace.
 
-## Structure du dépôt
-Communication_en_entreprise/
-│
-├── README.md
-├── projet UA1/
-│ └── Consignes du projet (PDF)
-└── branches/
-├── daniel
-├── thiery
-├── yacine (supprimé)
-└── dev
+## Structure du dépôt  
+  
+Communication_en_entreprise/  
+├── README.md  
+├── projet UA1/ 
+└── Consignes du projet (PDF)  
+└── branches/  
+├── daniel  
+├── thiery  
+├── yacine (supprimé)  
+└── dev  
 
 La structure est pensée pour être compréhensible par une personne extérieure au projet.
 
