@@ -37,8 +37,8 @@ La structure est pensée pour être compréhensible par une personne extérieure
 
 ## Répartition du travail
 - Daniel : correction et amélioration du fichier gestion_biblio_source_final.html
-- Thiery : fichier .css
-- Yacine : fichier .js 
+- Thiery : fichier style.css
+- Yacine : fichier structuration.js 
 (La répartition peut évoluer selon l’avancement du projet.)
 
 ## Échéance
