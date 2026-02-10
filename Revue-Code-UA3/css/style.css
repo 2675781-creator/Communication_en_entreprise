@@ -1,0 +1,214 @@
+/* ==========================
+   STYLES GÉNÉRAUX
+   ========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #333;
+    color: white;
+    font-family: 'Courier New', monospace;
+    padding: 20px;
+}
+/* ==========================
+   CONTENEUR PRINCIPAL
+   ========================== */
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    background: #444;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* ==========================
+   FORMULAIRE
+   ========================== */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ddd;
+}
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+/* Champs spécifiques */
+#inp_A,
+#inp_B,
+#inp_C {
+    width: 100%;
+}
+#sel_X {
+    width: 100%;
+}
+/* Champ de recherche */
+input[onkeyup] {
+    background: #ffffcc;
+    color: black;
+}
+/* ==========================
+   BOUTONS
+   ========================== */
+button {
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.btn-add {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+.btn-add:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.btn-del {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+.btn-del:hover {
+    background: #c82333;
+}
+/* Bouton RAZ */
+button[onclick="kill()"] {
+    background: #ffc107;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+button[onclick="kill()"]:hover {
+    background: #e0a800;
+}
+/* ==========================
+   MESSAGES
+   ========================== */
+#zone_m {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    min-height: 30px;
+    padding: 10px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 4px;
+}
+/* ==========================
+   COMPTEUR
+   ========================== */
+#cpt {
+    color: #ffd700;
+    font-weight: bold;
+}
+/* ==========================
+   TABLEAU
+   ========================== */
+#tab {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #333;
+}
+#tab thead {
+    background: #222;
+}
+#tab th,
+#tab td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: left;
+}
+#tab th {
+    font-weight: bold;
+    color: #ffd700;
+    text-transform: uppercase;
+}
+#corps_du_tableau tr {
+    transition: background 0.2s ease;
+}
+#corps_du_tableau tr:hover {
+    background: #3a3a3a;
+}
+#corps_du_tableau tr td:first-child {
+    color: #ff8c00;
+    font-weight: bold;
+    text-align: center;
+}
+/* Colonne catégorie */
+#corps_du_tableau tr td:nth-child(3) span {
+    background: white;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    display: inline-block;
+}
+/* ==========================
+   CONTENEUR FORMULAIRE
+   ========================== */
+div[style*="background: #222"] {
+    background: #222 !important;
+    padding: 15px;
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+/* ==========================
+   RESPONSIVE
+   ========================== */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    #tab {
+        font-size: 12px;
+    }
+    #tab th,
+    #tab td {
+        padding: 8px;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Gestion Biblio</title>
+</head>
+
+<body onload="LancerApplication()">
+
+    <div class="wrapper">
+        <h1>📚 BIBLIO MANAGER PRO</h1>
+    <br>
+
+    <!-- Ajouté de la couleur blanc pour les textes dans le contain -->
+    <div style="background: #222; padding: 15px; color: white;">
+        <!-- Supprimer "Titre" de la label, car on indique déjà quel information entrer dans la label -->
+        <label for="inp_A" class="input"></label>
+        <!-- Ajout de l'attribut 'required' pour indiquez que le champ 'Titre...' et 'Auteur...' sont requis -->
+        <input type="text" id="inp_A" placeholder="Titre..." required>
+    
+        <label for="inp_B" class="input"></label>
+        <input type="text" id="inp_B" placeholder="Auteur..." required>
+        <br>
+        
+        <form>
+            <select id="sel_X">
+                <option value="1">Science-Fiction</option>
+                <option value="2">Documentaire</option>
+                <option value="3">Roman</option>
+            </select>
+        </form>
+        <br>
+        <label for="inp_C" class="input"></label>
+        <input type="text" id="inp_C" placeholder="ISBN">
+        
+        <button class="btn-add" onclick="Executer_la_sauvegarde_a_la_memoire()">ENREGISTRER</button>
+        <br>
+        
+        Recherche : <input type="text" onkeyup="regarder(this.value)" style="background: #ffffcc; color: black;">
+    </div>
+    <p id="zone_m"></p>
+    <br>
+    
+    <h3>Inventaire (<span id="cpt">0</span>)</h3>
+    
+    <table id="tab">
+    <thead>
+        <tr>
+            <!-- Amélioration de l'ortographe des cellules -->
+            <th>Numéro</th>
+            <th>Infomation du livre</th>
+            <th>Type</th>
+            <th>Détails</th>
+            <th>Option</th>
+        </tr>
+    </thead>
+    
+    <tbody id="corps_du_tableau">
+    </tbody>
+    
+    </table>
+    
+    <br>
+        <button onclick="kill()">⚠️ RAZ</button>
+    </div>
+
+    <!-- On pointe que vers un seul fichier json structuration.js -->
+    <script src="/javascripts/structuration.js"></script>
+</body>
+
+</html>
+
+
