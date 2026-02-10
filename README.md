@@ -1,4 +1,4 @@
-# Communication en entreprise – Espace collaboratif GitHub
+v# Communication en entreprise – Espace collaboratif GitHub
 
 ## Contexte du projet
 Ce dépôt GitHub a été créé dans le cadre du cours Communication en entreprise. L’objectif est de mettre en place un espace collaboratif professionnel permettant de reproduire un flux de travail réel en entreprise, en utilisant GitHub comme outil central de communication, de collaboration et de gestion des versions.
@@ -31,7 +31,7 @@ Communication_en_entreprise/
 ├── daniel (supprimé)  
 ├── thiery (supprimé)  
 ├── yacine (supprimé)  
-└── dev  
+└── Developpement  
 
 La structure est pensée pour être compréhensible par une personne extérieure au projet.
 
