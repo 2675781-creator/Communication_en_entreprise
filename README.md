@@ -28,8 +28,8 @@ Communication_en_entreprise/
 ├── projet UA1/  
 └── Consignes du projet (PDF)  
 └── branches/  
-├── daniel  
-├── thiery  
+├── daniel (supprimé)  
+├── thiery (supprimé)  
 ├── yacine (supprimé)  
 └── dev  
 
